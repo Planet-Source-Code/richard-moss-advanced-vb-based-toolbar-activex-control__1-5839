@@ -1,0 +1,775 @@
+VERSION 5.00
+Begin VB.PropertyPage ppgTBButtons 
+   Caption         =   "Buttons"
+   ClientHeight    =   4335
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5625
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   289
+   ScaleMode       =   3  'Pixel
+   ScaleWidth      =   375
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   6
+      Left            =   1170
+      TabIndex        =   41
+      Tag             =   "E"
+      Top             =   2835
+      Width           =   780
+   End
+   Begin VB.CheckBox chkCaption 
+      Caption         =   "Alwa&ysShowCaption"
+      Height          =   240
+      Left            =   1485
+      TabIndex        =   23
+      Tag             =   "E"
+      Top             =   3600
+      Width           =   1815
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   5
+      Left            =   1170
+      TabIndex        =   15
+      Tag             =   "E"
+      Top             =   1755
+      Width           =   2490
+   End
+   Begin VB.Frame Frame4 
+      Caption         =   "Pictu&reDown:"
+      Enabled         =   0   'False
+      Height          =   870
+      Left            =   3825
+      TabIndex        =   36
+      Tag             =   "E"
+      Top             =   3330
+      Width           =   1680
+      Begin VB.PictureBox picImg 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BorderStyle     =   0  'None
+         Enabled         =   0   'False
+         Height          =   480
+         Index           =   2
+         Left            =   180
+         ScaleHeight     =   32
+         ScaleMode       =   3  'Pixel
+         ScaleWidth      =   32
+         TabIndex        =   37
+         TabStop         =   0   'False
+         Top             =   270
+         Width           =   480
+      End
+      Begin VB.CommandButton btnBrowse 
+         Height          =   375
+         Index           =   2
+         Left            =   765
+         Picture         =   "Buttons.pgx":0000
+         Style           =   1  'Graphical
+         TabIndex        =   38
+         Tag             =   "E"
+         ToolTipText     =   "Browse Picture"
+         Top             =   315
+         Width           =   375
+      End
+      Begin VB.CommandButton btnClear 
+         Height          =   375
+         Index           =   2
+         Left            =   1140
+         Picture         =   "Buttons.pgx":014A
+         Style           =   1  'Graphical
+         TabIndex        =   39
+         Tag             =   "E"
+         ToolTipText     =   "Clear Picture"
+         Top             =   315
+         Width           =   375
+      End
+   End
+   Begin VB.Frame Frame3 
+      Caption         =   "PictureO&ver:"
+      Enabled         =   0   'False
+      Height          =   870
+      Left            =   3825
+      TabIndex        =   32
+      Tag             =   "E"
+      Top             =   2430
+      Width           =   1680
+      Begin VB.PictureBox picImg 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BorderStyle     =   0  'None
+         Enabled         =   0   'False
+         Height          =   480
+         Index           =   1
+         Left            =   180
+         ScaleHeight     =   32
+         ScaleMode       =   3  'Pixel
+         ScaleWidth      =   32
+         TabIndex        =   33
+         TabStop         =   0   'False
+         Top             =   270
+         Width           =   480
+      End
+      Begin VB.CommandButton btnBrowse 
+         Height          =   375
+         Index           =   1
+         Left            =   765
+         Picture         =   "Buttons.pgx":0294
+         Style           =   1  'Graphical
+         TabIndex        =   34
+         Tag             =   "E"
+         ToolTipText     =   "Browse Picture"
+         Top             =   315
+         Width           =   375
+      End
+      Begin VB.CommandButton btnClear 
+         Height          =   375
+         Index           =   1
+         Left            =   1140
+         Picture         =   "Buttons.pgx":03DE
+         Style           =   1  'Graphical
+         TabIndex        =   35
+         Tag             =   "E"
+         ToolTipText     =   "Clear Picture"
+         Top             =   315
+         Width           =   375
+      End
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   4
+      Left            =   1170
+      TabIndex        =   19
+      Tag             =   "E"
+      Top             =   2475
+      Width           =   780
+   End
+   Begin VB.Frame Frame1 
+      Enabled         =   0   'False
+      Height          =   870
+      Left            =   3285
+      TabIndex        =   24
+      Tag             =   "E"
+      Top             =   630
+      Width           =   2220
+      Begin VB.CheckBox chkUseMask 
+         Caption         =   "&UseMaskColor"
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   180
+         TabIndex        =   25
+         Tag             =   "E"
+         Top             =   0
+         Width           =   1365
+      End
+      Begin VB.CommandButton cmdBrowse 
+         Caption         =   "..."
+         Enabled         =   0   'False
+         Height          =   285
+         Left            =   1500
+         Style           =   1  'Graphical
+         TabIndex        =   27
+         Tag             =   "E"
+         Top             =   360
+         Width           =   285
+      End
+      Begin VB.Label lblHdr 
+         AutoSize        =   -1  'True
+         Caption         =   "C&olour:"
+         Enabled         =   0   'False
+         Height          =   195
+         Index           =   5
+         Left            =   315
+         TabIndex        =   26
+         Tag             =   "E"
+         Top             =   405
+         Width           =   495
+      End
+      Begin VB.Shape shpCol 
+         FillColor       =   &H00FF00FF&
+         FillStyle       =   0  'Solid
+         Height          =   285
+         Left            =   945
+         Top             =   360
+         Width           =   555
+      End
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "&Picture:"
+      Enabled         =   0   'False
+      Height          =   870
+      Left            =   3825
+      TabIndex        =   28
+      Tag             =   "E"
+      Top             =   1530
+      Width           =   1680
+      Begin VB.PictureBox picImg 
+         AutoRedraw      =   -1  'True
+         AutoSize        =   -1  'True
+         BorderStyle     =   0  'None
+         Enabled         =   0   'False
+         Height          =   480
+         Index           =   0
+         Left            =   180
+         ScaleHeight     =   32
+         ScaleMode       =   3  'Pixel
+         ScaleWidth      =   32
+         TabIndex        =   29
+         TabStop         =   0   'False
+         Top             =   270
+         Width           =   480
+      End
+      Begin VB.CommandButton btnBrowse 
+         Height          =   375
+         Index           =   0
+         Left            =   765
+         Picture         =   "Buttons.pgx":0528
+         Style           =   1  'Graphical
+         TabIndex        =   30
+         Tag             =   "E"
+         ToolTipText     =   "Browse Picture"
+         Top             =   315
+         Width           =   375
+      End
+      Begin VB.CommandButton btnClear 
+         Height          =   375
+         Index           =   0
+         Left            =   1140
+         Picture         =   "Buttons.pgx":0672
+         Style           =   1  'Graphical
+         TabIndex        =   31
+         Tag             =   "E"
+         ToolTipText     =   "Clear Picture"
+         Top             =   315
+         Width           =   375
+      End
+   End
+   Begin VB.CheckBox chkVisible 
+      Caption         =   "&Visible"
+      Height          =   240
+      Left            =   1485
+      TabIndex        =   22
+      Tag             =   "E"
+      Top             =   3330
+      Width           =   1140
+   End
+   Begin VB.CheckBox chkChecked 
+      Caption         =   "C&hecked"
+      Height          =   240
+      Left            =   180
+      TabIndex        =   21
+      Tag             =   "E"
+      Top             =   3600
+      Width           =   1140
+   End
+   Begin VB.CheckBox chkEnabled 
+      Caption         =   "&Enabled"
+      Height          =   240
+      Left            =   180
+      TabIndex        =   20
+      Tag             =   "E"
+      Top             =   3330
+      Width           =   1140
+   End
+   Begin VB.ComboBox cboStyle 
+      Height          =   315
+      ItemData        =   "Buttons.pgx":07BC
+      Left            =   1170
+      List            =   "Buttons.pgx":07C9
+      Style           =   2  'Dropdown List
+      TabIndex        =   9
+      Tag             =   "E"
+      Top             =   630
+      Width           =   1320
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   3
+      Left            =   1170
+      TabIndex        =   17
+      Tag             =   "E"
+      Top             =   2115
+      Width           =   2490
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   2
+      Left            =   1170
+      TabIndex        =   13
+      Tag             =   "E"
+      Top             =   1395
+      Width           =   1320
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Index           =   1
+      Left            =   1170
+      TabIndex        =   11
+      Tag             =   "E"
+      Top             =   1035
+      Width           =   1320
+   End
+   Begin VB.HScrollBar hsbIDX 
+      Height          =   285
+      Left            =   1440
+      Max             =   1
+      Min             =   1
+      TabIndex        =   2
+      TabStop         =   0   'False
+      Tag             =   "E"
+      Top             =   135
+      Value           =   1
+      Width           =   465
+   End
+   Begin VB.TextBox txtField 
+      BackColor       =   &H80000014&
+      Height          =   285
+      Index           =   0
+      Left            =   675
+      Locked          =   -1  'True
+      TabIndex        =   1
+      TabStop         =   0   'False
+      Tag             =   "E"
+      Top             =   135
+      Width           =   690
+   End
+   Begin VB.CommandButton btnAction 
+      Height          =   375
+      Index           =   1
+      Left            =   3075
+      Picture         =   "Buttons.pgx":07FC
+      Style           =   1  'Graphical
+      TabIndex        =   4
+      Tag             =   "E"
+      ToolTipText     =   "Remove Button"
+      Top             =   90
+      Width           =   375
+   End
+   Begin VB.CommandButton btnAction 
+      Caption         =   "&Insert"
+      Height          =   375
+      Index           =   0
+      Left            =   2025
+      Style           =   1  'Graphical
+      TabIndex        =   3
+      ToolTipText     =   "Add Button"
+      Top             =   90
+      Width           =   1050
+   End
+   Begin VB.CommandButton btnAction 
+      Height          =   375
+      Index           =   2
+      Left            =   3465
+      Picture         =   "Buttons.pgx":0946
+      Style           =   1  'Graphical
+      TabIndex        =   5
+      Tag             =   "E"
+      ToolTipText     =   "Move Button Left"
+      Top             =   90
+      Width           =   375
+   End
+   Begin VB.CommandButton btnAction 
+      Height          =   375
+      Index           =   3
+      Left            =   3825
+      Picture         =   "Buttons.pgx":0A90
+      Style           =   1  'Graphical
+      TabIndex        =   6
+      Tag             =   "E"
+      ToolTipText     =   "Move Button Right"
+      Top             =   90
+      Width           =   375
+   End
+   Begin VB.CommandButton btnAction 
+      Caption         =   "Swap..."
+      Height          =   375
+      Index           =   4
+      Left            =   4200
+      Style           =   1  'Graphical
+      TabIndex        =   7
+      Tag             =   "E"
+      ToolTipText     =   "Move Button to specified location"
+      Top             =   90
+      Width           =   1320
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&GroupID:"
+      Height          =   195
+      Index           =   8
+      Left            =   135
+      TabIndex        =   40
+      Tag             =   "E"
+      Top             =   2880
+      Width           =   645
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Description:"
+      Height          =   195
+      Index           =   7
+      Left            =   135
+      TabIndex        =   14
+      Tag             =   "E"
+      Top             =   1800
+      Width           =   840
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Width:"
+      Height          =   195
+      Index           =   6
+      Left            =   135
+      TabIndex        =   18
+      Tag             =   "E"
+      Top             =   2520
+      Width           =   465
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&ToolTipText:"
+      Height          =   195
+      Index           =   4
+      Left            =   135
+      TabIndex        =   16
+      Tag             =   "E"
+      Top             =   2160
+      Width           =   900
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Caption:"
+      Height          =   195
+      Index           =   3
+      Left            =   135
+      TabIndex        =   12
+      Tag             =   "E"
+      Top             =   1440
+      Width           =   585
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Key:"
+      Height          =   195
+      Index           =   2
+      Left            =   135
+      TabIndex        =   10
+      Tag             =   "E"
+      Top             =   1080
+      Width           =   315
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Style:"
+      Height          =   195
+      Index           =   1
+      Left            =   135
+      TabIndex        =   8
+      Tag             =   "E"
+      Top             =   720
+      Width           =   390
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "Index:"
+      Height          =   195
+      Index           =   0
+      Left            =   135
+      TabIndex        =   0
+      Top             =   180
+      Width           =   435
+   End
+End
+Attribute VB_Name = "ppgTBButtons"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+DefInt A-Z
+
+Dim TB As asxToolbar
+Dim LastBtn
+
+Private Sub btnAction_Click(Index As Integer)
+ Dim I, Z, X
+ Dim M$
+ Z = hsbIDX
+ Select Case Index
+  Case 0: GoSub AddButton
+  Case 1: GoSub DelButton
+  Case 2: GoSub MoveLeft
+  Case 3: GoSub MoveRight
+  Case 4: GoSub MoveX
+ End Select
+Exit Sub
+
+AddButton:
+ If Changed Then PropertyPage_ApplyChanges
+ I = TB.AddButton()
+ If I Then
+  hsbIDX.Max = I
+  If Z = hsbIDX.Max Then
+   hsbIDX = I
+  Else
+   TB.SwapButton I, Z + 1
+   hsbIDX = Z + 1
+  End If
+ Else
+  MsgBox "Unable to add button", vbCritical
+ End If
+ Changed = -1
+Return
+
+DelButton:
+ Changed = 0
+ I = TB.DeleteButton(Z)
+ hsbIDX.Max = I
+ If I Then
+  If TB.ButtonCount = 0 Then
+   SetTagControls
+  Else
+   hsbIDX.Max = I
+   If Z >= I Then
+    hsbIDX = I
+   Else
+    hsbIDX = Z
+   End If
+   hsbIDX_Change
+   Changed = -1
+  End If
+ ElseIf I = -1 Then
+  MsgBox "Unable to delete button", vbCritical
+ End If
+Return
+
+MoveLeft:
+ I = hsbIDX
+ If I > 1 Then
+  PropertyPage_ApplyChanges
+  Z = TB.SwapButton(I, I - 1)
+  If Z Then LastBtn = Z: hsbIDX = Z
+  Changed = -1
+ Else
+  MsgBox "Button cannot be moved any further left.", 48
+ End If
+Return
+
+MoveRight:
+ I = hsbIDX
+ If I < TB.ButtonCount Then
+  PropertyPage_ApplyChanges
+  Z = TB.SwapButton(I, I + 1)
+  If Z Then LastBtn = Z: hsbIDX = Z
+  Changed = -1
+ Else
+  MsgBox "Button cannot be moved any further right.", 48
+ End If
+Return
+
+MoveX:
+ Z = hsbIDX.Max
+ X = hsbIDX
+ M$ = InputBox$("Swap button " & X & " with which index?" & Chr$(10) & Chr$(10) & "Plese select a position between 1 and " & Z, "Swap Button")
+ If M$ <> "" Then
+  I = Val(M$)
+  If I < 1 Or I > Z Then
+   MsgBox "Value entered out of range.", vbExclamation
+  Else
+   PropertyPage_ApplyChanges
+   Z = TB.SwapButton(hsbIDX, I)
+   If Z Then LastBtn = Z: hsbIDX = Z
+   Changed = -1
+  End If
+ End If
+Return
+End Sub
+
+Private Sub btnBrowse_Click(Index As Integer)
+ Dim F$
+ F$ = SelectFile$(hWnd, "Browse Picture", "Pictures (*.bmp;*.dib;*.gif;*.ico;*.jpg;*.rle)|*.bmp;*.dib;*.gif;*.ico;*.jpg;*.rle|All Files (*.*)|*.*", 0, "", "", "BMP", fdmOpenFile)
+ If F$ <> "" Then
+  On Error Resume Next
+   picImg(Index).BackColor = shpCol.FillColor
+   picImg(Index).Picture = LoadPicture(F$)
+   picImg(Index).Picture = picImg(Index).Image
+   If txtField(3) = "" Then txtField(3) = RemoveExtension$(GetFile$(F$))
+   If txtField(1) = "" Then txtField(1) = RemoveExtension$(GetFile$(F$))
+   Changed = -1
+   If Err Then MsgBox Error$, vbExclamation
+  On Error GoTo 0
+ End If
+End Sub
+
+Private Sub btnClear_Click(Index As Integer)
+ Set picImg(Index).Picture = Nothing
+ Changed = -1
+End Sub
+
+
+Private Sub cboStyle_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkCaption_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkChecked_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkEnabled_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub chkUseMask_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkVisible_Click()
+ Changed = -1
+End Sub
+
+Private Sub cmdBrowse_Click()
+ Dim C As Long
+ C = SelectColor(hWnd, shpCol.FillColor, 0)
+ If C <> -1 Then
+  shpCol.FillColor = C
+  picImg(0).BackColor = C
+  picImg(1).BackColor = C
+  picImg(2).BackColor = C
+  Changed = -1
+ End If
+End Sub
+
+
+Private Sub hsbIDX_Change()
+ Dim I
+ Dim L As Boolean, R As Boolean
+ Pointer 11
+  I = hsbIDX
+  If I <> LastBtn And Changed = -1 Then PropertyPage_ApplyChanges
+  LastBtn = I
+  With TB
+   txtField(0) = I
+   If .ButtonCount >= I Then
+    SetTagControls , -1
+    If I = 1 Then L = 0 Else L = -1
+    If I = .ButtonCount Then R = 0 Else R = -1
+    btnAction(2).Enabled = L
+    btnAction(3).Enabled = R
+    cboStyle.ListIndex = .ButtonStyle(I)
+    txtField(1) = .ButtonKey(I)
+    txtField(2) = .ButtonCaption(I)
+    txtField(3) = .ButtonToolTipText(I)
+    txtField(4) = .ButtonPlaceholderWidth(I)
+    txtField(5) = .ButtonDescription(I)
+    txtField(6) = .ButtonGroupID(I)
+    chkEnabled = Abs(.ButtonEnabled(I))
+    chkChecked = Abs(.ButtonChecked(I))
+    chkUseMask = Abs(.ButtonUseMaskColor(I))
+    chkVisible = Abs(.ButtonVisible(I))
+    chkCaption = Abs(.ButtonAlwaysShowCaption(I))
+    shpCol.FillColor = .ButtonMaskColor(I)
+    Set picImg(0).Picture = .ButtonPicture(I)
+    Set picImg(1).Picture = .ButtonPictureOver(I)
+    Set picImg(2).Picture = .ButtonPictureDown(I)
+    Changed = 0
+   Else
+    MsgBox "Button index '" & I & "' not found.", vbCritical
+    SetTagControls
+   End If
+  End With
+ Pointer 0
+End Sub
+
+Private Sub hsbIDX_Scroll()
+ hsbIDX_Change
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+ Dim I
+ With TB
+  I = LastBtn
+  If I <= .ButtonCount Then
+   .Redraw = 0
+    .ButtonStyle(I) = cboStyle.ListIndex
+    .ButtonKey(I) = txtField(1)
+    .ButtonCaption(I) = txtField(2)
+    .ButtonToolTipText(I) = txtField(3)
+    .ButtonPlaceholderWidth(I) = Val(txtField(4))
+    .ButtonDescription(I) = txtField(5)
+    .ButtonGroupID(I) = txtField(6)
+    .ButtonEnabled(I) = chkEnabled
+    .ButtonChecked(I) = chkChecked
+    .ButtonAlwaysShowCaption(I) = chkCaption
+    .ButtonUseMaskColor(I) = chkUseMask
+    .ButtonVisible(I) = chkVisible
+    .ButtonMaskColor(I) = shpCol.FillColor
+    Set .ButtonPicture(I) = picImg(0).Picture
+    Set .ButtonPictureOver(I) = picImg(1).Picture
+    Set .ButtonPictureDown(I) = picImg(2).Picture
+   .Redraw = -1
+   .Refresh
+  End If
+ End With
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+ If TypeOf SelectedControls(0) Is asxToolbar Then
+  If TB Is Nothing Then
+   GoSub LoadProperties
+  ElseIf TB.hWnd <> SelectedControls(0).hWnd Then
+   GoSub LoadProperties
+  End If
+ End If
+Exit Sub
+
+LoadProperties:
+ Set TB = SelectedControls(0)
+ If TB.ButtonCount Then
+  hsbIDX.Max = TB.ButtonCount
+  hsbIDX_Change
+ Else
+  SetTagControls
+ End If
+ Changed = 0
+Return
+End Sub
+
+
+Private Sub SetTagControls(Optional T$ = "E", Optional V As Boolean = 0)
+ Dim I
+ Dim C As Control
+ On Error Resume Next
+  For Each C In Controls
+   If C.Tag = T$ Then C.Enabled = V
+  Next
+ On Error GoTo 0
+End Sub
+
+Private Sub txtField_Change(Index As Integer)
+ If Index <> 0 Then Changed = -1
+End Sub
+
+
+Private Sub txtField_GotFocus(Index As Integer)
+ Highlight txtField(Index)
+End Sub
+
+
+Private Sub txtField_KeyPress(Index As Integer, KeyAscii As Integer)
+ Dim C$
+ If Index = 4 Or Index = 6 Then
+  C$ = Chr$(KeyAscii)
+  If C$ < "0" Or C$ > "9" Then
+   If KeyAscii <> 8 Then Beep: KeyAscii = 0
+  End If
+ End If
+End Sub
+
+

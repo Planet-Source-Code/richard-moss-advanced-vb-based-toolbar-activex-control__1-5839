@@ -1,0 +1,13 @@
+asxToolbar = 0, 0, 0, 0, C, 183, 80, 630, 488, C
+clsBSButton = 0, 0, 0, 0, C
+clsIFceComp = 0, 0, 0, 0, C
+clsLogFont = 0, 0, 0, 0, C
+ascMemoryBitmap = 0, 0, 0, 0, C
+ascPaintEffects = 0, 0, 0, 0, C
+basAriadIFceComp = 0, 0, 0, 0, C
+frmTooltip = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+basGDI = 0, 0, 0, 0, C
+ppgTBGeneral = 0, 0, 0, 0, C, 183, 80, 630, 488, C
+ppgTBButtons = 0, 0, 0, 0, C, 183, 80, 630, 488, C
+basFileDialogs = 0, 0, 0, 0, C
+basChooseColor = 0, 0, 0, 0, C

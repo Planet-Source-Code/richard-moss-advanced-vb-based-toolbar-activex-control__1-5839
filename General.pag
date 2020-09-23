@@ -1,0 +1,416 @@
+VERSION 5.00
+Begin VB.PropertyPage ppgTBGeneral 
+   Caption         =   "General"
+   ClientHeight    =   4095
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   6315
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   273
+   ScaleMode       =   3  'Pixel
+   ScaleWidth      =   421
+   Begin VB.CheckBox chkSounds 
+      Caption         =   "Play&Sounds"
+      Height          =   240
+      Left            =   4275
+      TabIndex        =   21
+      Top             =   1485
+      Width           =   1635
+   End
+   Begin VB.CheckBox chkShowToolTips 
+      Caption         =   "Show&ToolTips"
+      Height          =   240
+      Left            =   4275
+      TabIndex        =   22
+      Top             =   1800
+      Width           =   1635
+   End
+   Begin VB.CheckBox chkSolidChecked 
+      Caption         =   "SolidChec&ked"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   20
+      Top             =   2115
+      Width           =   1965
+   End
+   Begin VB.ComboBox cboStyle 
+      Height          =   315
+      ItemData        =   "General.pgx":0000
+      Left            =   135
+      List            =   "General.pgx":000A
+      Style           =   2  'Dropdown List
+      TabIndex        =   11
+      Top             =   3690
+      Width           =   1725
+   End
+   Begin VB.CheckBox chkEnabled 
+      Caption         =   "&Enabled"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   25
+      Top             =   3420
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkDisabled 
+      Caption         =   "DisabledText&3D"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   24
+      Top             =   2970
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkAutoSize 
+      Caption         =   "AutoSi&ze"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   23
+      Top             =   2565
+      Width           =   1965
+   End
+   Begin VB.ComboBox cboAlignment 
+      Height          =   315
+      ItemData        =   "General.pgx":0029
+      Left            =   135
+      List            =   "General.pgx":0039
+      Style           =   2  'Dropdown List
+      TabIndex        =   7
+      Top             =   2340
+      Width           =   1725
+   End
+   Begin VB.TextBox txtField 
+      Height          =   285
+      Left            =   135
+      TabIndex        =   9
+      Top             =   3015
+      Width           =   600
+   End
+   Begin VB.CheckBox chkShowSeparators 
+      Caption         =   "Sho&wSeparators"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   19
+      Top             =   1800
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkBold 
+      Caption         =   "BoldOn&Checked"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   18
+      Top             =   1485
+      Width           =   1965
+   End
+   Begin VB.ComboBox cboCaption 
+      Height          =   315
+      ItemData        =   "General.pgx":008F
+      Left            =   135
+      List            =   "General.pgx":009C
+      Style           =   2  'Dropdown List
+      TabIndex        =   5
+      Top             =   1665
+      Width           =   1725
+   End
+   Begin VB.ComboBox cboAppearance 
+      Height          =   315
+      ItemData        =   "General.pgx":00D5
+      Left            =   135
+      List            =   "General.pgx":00DF
+      Style           =   2  'Dropdown List
+      TabIndex        =   1
+      Top             =   315
+      Width           =   1725
+   End
+   Begin VB.CheckBox chkDoubleBottomBorder 
+      Caption         =   "DoubleBotto&mBorder"
+      Height          =   285
+      Left            =   4275
+      TabIndex        =   17
+      Top             =   405
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkDoubleTopBorder 
+      Caption         =   "Dou&bleTopBorder"
+      Height          =   285
+      Left            =   4275
+      TabIndex        =   16
+      Top             =   90
+      Width           =   1965
+   End
+   Begin VB.ComboBox cboBorderStyle 
+      Height          =   315
+      ItemData        =   "General.pgx":00FD
+      Left            =   135
+      List            =   "General.pgx":0113
+      Style           =   2  'Dropdown List
+      TabIndex        =   3
+      Top             =   990
+      Width           =   1725
+   End
+   Begin VB.CheckBox chkBorderBottom 
+      Caption         =   "Border&Bottom"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   15
+      Top             =   1035
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkBorderRight 
+      Caption         =   "Border&Right"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   14
+      Top             =   720
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkBorderLeft 
+      Caption         =   "Border&Left"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   13
+      Top             =   405
+      Width           =   1965
+   End
+   Begin VB.CheckBox chkBorderTop 
+      Caption         =   "Border&Top"
+      Height          =   285
+      Left            =   2205
+      TabIndex        =   12
+      Top             =   90
+      Width           =   1965
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "St&yle:"
+      Height          =   195
+      Index           =   5
+      Left            =   135
+      TabIndex        =   10
+      Top             =   3465
+      Width           =   390
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "CaptionAlignm&ent:"
+      Height          =   195
+      Index           =   4
+      Left            =   135
+      TabIndex        =   6
+      Top             =   2115
+      Width           =   1275
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "Button&Gap:"
+      Height          =   195
+      Index           =   3
+      Left            =   135
+      TabIndex        =   8
+      Top             =   2790
+      Width           =   810
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "Caption&Options:"
+      Height          =   195
+      Index           =   2
+      Left            =   135
+      TabIndex        =   4
+      Top             =   1440
+      Width           =   1125
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "&Appearance:"
+      Height          =   195
+      Index           =   1
+      Left            =   135
+      TabIndex        =   0
+      Top             =   90
+      Width           =   915
+   End
+   Begin VB.Label lblHdr 
+      AutoSize        =   -1  'True
+      Caption         =   "Border&Style:"
+      Height          =   195
+      Index           =   0
+      Left            =   135
+      TabIndex        =   2
+      Top             =   765
+      Width           =   855
+   End
+End
+Attribute VB_Name = "ppgTBGeneral"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+DefInt A-Z
+
+Private Sub cboAlignment_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub cboAppearance_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub cboBorderStyle_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub cboCaption_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub chkAutoSize_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkBold_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkDisabled_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkDoubleBottomBorder_Click()
+ Changed = -1
+End Sub
+
+
+Private Sub chkDoubleTopBorder_Click()
+    Changed = True
+End Sub
+
+
+
+
+Private Sub chkBorderBottom_Click()
+ Changed = True
+End Sub
+
+
+Private Sub chkBorderRight_Click()
+ Changed = True
+End Sub
+
+
+Private Sub chkBorderLeft_Click()
+ Changed = True
+End Sub
+
+
+Private Sub chkBorderTop_Click()
+ Changed = True
+End Sub
+
+
+Private Sub cboStyle_Click()
+ Changed = True
+End Sub
+
+
+
+Private Sub chkEnabled_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkShowSeparators_Click()
+ Changed = -1
+End Sub
+
+Private Sub chkSolidChecked_Click()
+ Changed = -1
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+ Dim I
+ On Error GoTo ProcErr
+  For I = 0 To SelectedControls.Count - 1
+   With SelectedControls(I)
+    .Redraw = 0
+     .PlaySounds = chkSounds
+     .ShowToolTips = chkShowToolTips
+     .SolidChecked = chkSolidChecked
+     .Style = cboStyle.ListIndex
+     .CaptionOptions = cboCaption.ListIndex
+     .DoubleTopBorder = chkDoubleTopBorder
+     .DoubleBottomBorder = chkDoubleBottomBorder
+     .BorderBottom = chkBorderBottom
+     .BorderRight = chkBorderRight
+     .BorderLeft = chkBorderLeft
+     .BorderTop = chkBorderTop
+     .BorderStyle = cboBorderStyle.ListIndex
+     .Appearance = cboAppearance.ListIndex
+     .ButtonGap = txtField
+     .BoldOnChecked = chkBold
+     .ShowSeparators = chkShowSeparators
+     .AutoSize = chkAutoSize
+     .CaptionAlignment = cboAlignment.ListIndex
+     .DisabledText3D = chkDisabled
+     .Enabled = chkEnabled
+    .Redraw = -1
+    .Refresh
+   End With
+  Next
+ On Error GoTo 0
+Exit Sub
+
+ProcErr:
+ MsgBox Error$, 16
+Resume Next
+End Sub
+
+
+
+Private Sub PropertyPage_SelectionChanged()
+ With SelectedControls(0)
+  chkSounds = Abs(.PlaySounds)
+  chkShowToolTips = Abs(.ShowToolTips)
+  chkSolidChecked = Abs(.SolidChecked)
+  chkDoubleTopBorder = Abs(.DoubleTopBorder)
+  chkDoubleBottomBorder = Abs(.DoubleBottomBorder)
+  chkBorderBottom = Abs(.BorderBottom)
+  chkBorderRight = Abs(.BorderRight)
+  chkBorderLeft = Abs(.BorderLeft)
+  chkBorderTop = Abs(.BorderTop)
+  chkDisabled = Abs(.DisabledText3D)
+  chkEnabled = Abs(.Enabled)
+  cboBorderStyle.ListIndex = .BorderStyle
+  cboStyle.ListIndex = .Style
+  cboAppearance.ListIndex = .Appearance
+  cboCaption.ListIndex = .CaptionOptions
+  chkBold = Abs(.BoldOnChecked)
+  chkAutoSize = Abs(.AutoSize)
+  chkShowSeparators = Abs(.ShowSeparators)
+  cboAlignment.ListIndex = .CaptionAlignment
+  txtField = .ButtonGap
+ End With
+ Changed = 0
+End Sub
+
+
+Private Sub txtField_Change()
+ Changed = -1
+End Sub
+
+Private Sub txtField_GotFocus()
+ Highlight txtField
+End Sub
+
+
+Private Sub txtField_KeyPress(KeyAscii As Integer)
+ Dim C$
+ C$ = Chr$(KeyAscii)
+ If C$ < "0" Or C$ > "9" Then
+  If KeyAscii <> 8 Then Beep: KeyAscii = 0
+ End If
+End Sub
+
+
